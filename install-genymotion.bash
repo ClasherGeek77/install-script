@@ -11,4 +11,3 @@ else
 
 sudo chmod +x ~/genymotion.bin
 yes | sudo ./genymotion.bin
-
