@@ -26,6 +26,6 @@ sudo wget --output-document=appium-inspector.desktop https://raw.githubuserconte
 sudo mv ~/appium-inspector/appium-inspector.desktop ~/.local/share/applications
 sudo mv ~/appium-inspector /opt/
 
-sudo chmod a+x Appium-Inspector-linux.AppImage
+sudo chmod a+x /opt/appium-inspector/Appium-Inspector-linux.AppImage
 
 exec "$SHELL"
