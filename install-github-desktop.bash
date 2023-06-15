@@ -1,7 +1,6 @@
 #!/bin/bash
 
 cd ~
-    echo "File is already downloaded."
 if [ -f ~/GitHubDesktop-linux-3.2.1-linux1.deb ]; then
     echo "File exists."
 else 
