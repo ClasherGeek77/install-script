@@ -3,6 +3,7 @@
 sudo apt-get --quiet update --yes
 
 sudo apt-get -y install fuse libfuse2
+
 sudo modprobe -v fuse
 sudo addgroup fuse
 sudo adduser $USER fuse
