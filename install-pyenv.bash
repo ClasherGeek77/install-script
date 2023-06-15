@@ -6,7 +6,7 @@ sudo apt-get -y install git
 
 exec "$SHELL"
 
-if [ -f $HOME/.pyenv ]; then
+if [ -d $HOME/.pyenv ]; then
     echo "pyenv exists. redownloading..."
     sudo rm -rf ~/.pyenv
     git clone https://github.com/pyenv/pyenv.git ~/.pyenv
