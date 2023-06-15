@@ -1,6 +1,11 @@
 #!/bin/bash
 
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+if grep -wq "pyenv virtualenv-init" ~/.bashrc; then 
+    echo "Export Exists" 
+else 
+    echo "Does not exist"
+    echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+fi
 
 sudo apt-get --quiet update --yes
 sudo apt-get -y install git

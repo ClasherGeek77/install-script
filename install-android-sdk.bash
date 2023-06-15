@@ -1,8 +1,13 @@
 #!/bin/bash
 
-echo 'export ANDROID_HOME="$HOME/android-sdk-29"' >> ~/.bashrc
-echo 'export PATH="$PATH:$ANDROID_HOME/tools/bin"' >> ~/.bashrc
-echo 'export PATH="$PATH:$ANDROID_HOME/platform-tools"' >> ~/.bashrc
+if grep -wq "export ANDROID_HOME=" ~/.bashrc; then 
+    echo "Export Exists" 
+else 
+    echo "Does not exist"
+    echo 'export ANDROID_HOME="$HOME/android-sdk-29"' >> ~/.bashrc
+    echo 'export PATH="$PATH:$ANDROID_HOME/tools/bin"' >> ~/.bashrc
+    echo 'export PATH="$PATH:$ANDROID_HOME/platform-tools"' >> ~/.bashrc
+fi
 
 sudo apt-get --quiet update --yes
 sudo apt-get --quiet install openjdk-8-jdk --yes
@@ -11,6 +16,7 @@ cd ~
 if [ -f ~/android-sdk.zip ]; then
     sudo rm -rf ~/android-sdk.zip
     echo "File exists."
+    wget --output-document=android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
 else 
     echo "File does not exist."
     wget --output-document=android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
