@@ -11,6 +11,7 @@ exec "$SHELL"
 cd ~
 if [[ -d /opt/appium-inspector ]]
 then
+    echo "Instalation exists, Removing"
     sudo rm -rf /opt/appium-inspector
     sudo rm -rf ~/.local/share/applications/appium-inspector.desktop
 fi
