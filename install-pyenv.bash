@@ -6,7 +6,7 @@ sudo apt-get -y install git
 
 exec "$SHELL"
 
-if [ -f ~/.pyenv ]; then
+if [ -f $HOME/.pyenv ]; then
     echo "pyenv exists. redownloading..."
     sudo rm -rf ~/.pyenv
     git clone https://github.com/pyenv/pyenv.git ~/.pyenv
@@ -18,7 +18,7 @@ fi
 cd ~/.pyenv && src/configure && make -C src
 
 if grep -wq "export PYENV_ROOT" ~/.bashrc; then 
-    echo "Exists" 
+    echo "Export Exists" 
 else 
     echo "Does not exist"
     echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
