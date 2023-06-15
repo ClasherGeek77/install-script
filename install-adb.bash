@@ -3,10 +3,10 @@
 if [ -f /usr/bin/adb ]; then
     echo "File exists"
     sudo rm -rf /usr/bin/adb
-    sudo wget --output-document=/usr/bin/adb https://raw.githubusercontent.com/ClasherGeek77/install-script/main/adb41
+    sudo wget -q --show-progress --output-document=/usr/bin/adb https://raw.githubusercontent.com/ClasherGeek77/install-script/main/adb41
 else 
     echo "File does not exist"
-    sudo wget --output-document=/usr/bin/adb https://raw.githubusercontent.com/ClasherGeek77/install-script/main/adb41
+    sudo wget -q --show-progress --output-document=/usr/bin/adb https://raw.githubusercontent.com/ClasherGeek77/install-script/main/adb41
 fi
 sudo chmod +x /usr/bin/adb
 exec "$SHELL"
