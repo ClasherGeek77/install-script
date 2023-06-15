@@ -15,3 +15,4 @@ fi
 sudo unzip -d $HOME/android-sdk-29 android-sdk.zip
 sudo echo y | android-sdk-29/tools/bin/sdkmanager "platform-tools" "platforms;android-29" >/dev/null
 sudo echo y | android-sdk-29/tools/bin/sdkmanager "build-tools;29.0.3" >/dev/null
+exec "$SHELL"
