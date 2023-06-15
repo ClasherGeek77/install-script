@@ -16,6 +16,8 @@ fi
 sudo unzip -d $HOME/android-sdk-29 android-sdk.zip
 sudo echo y | android-sdk-29/tools/bin/sdkmanager "platform-tools" "platforms;android-29" >/dev/null
 sudo echo y | android-sdk-29/tools/bin/sdkmanager "build-tools;29.0.3" >/dev/null
+yes | android-sdk-29/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
 exec "$SHELL"
-sdkmanager --install "platform-tools" "platforms;android-29" "build-tools;29.0.2" "emulator"
+sudo chmod 777 $ANDROID_HOME -R
+sdkmanager -sdk_root=$ANDROID_HOME --install "platform-tools" "platforms;android-29" "build-tools;29.0.2" "emulator"
 exec "$SHELL"
