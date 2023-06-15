@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt update
+sudo apt-get --quiet update --yes
 
 sudo apt-get -y install git
 
