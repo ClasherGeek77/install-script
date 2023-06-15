@@ -7,7 +7,10 @@ sudo npm install -g appium
 exec "$SHELL"
 
 cd ~
-
+if [[ -d ~/appium-inspector ]]
+then
+    sudo rm -rf ~/appium-inspector
+fi
 mkdir appium-inspector
 
 cd ~/appium-inspector

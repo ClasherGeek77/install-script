@@ -22,7 +22,6 @@ exec "$SHELL"
 
 sudo apt-get update
 
-
 sudo apt-get -y install docker-ce-rootless-extras
 
 exec "$SHELL"
