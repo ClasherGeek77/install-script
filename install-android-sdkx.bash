@@ -4,7 +4,7 @@ echo 'export ANDROID_HOME="$HOME/android-sdk-29"' >> ~/.bashrc
 echo 'export PATH="$PATH:$ANDROID_HOME/tools/bin"' >> ~/.bashrc
 
 sudo apt-get --quiet update --yes
-sudo apt-get install openjdk-8-jdk
+sudo apt-get --quiet install openjdk-8-jdk --yes
 sudo apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
 cd ~
 if [ -f ~/android-sdk.zip ]; then
