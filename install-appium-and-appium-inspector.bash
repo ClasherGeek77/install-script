@@ -9,9 +9,10 @@ sudo npm install -g appium
 exec "$SHELL"
 
 cd ~
-if [[ -d ~/appium-inspector ]]
+if [[ -d /opt/appium-inspector ]]
 then
-    sudo rm -rf ~/appium-inspector
+    sudo rm -rf /opt/appium-inspector
+    sudo rm -rf ~/.local/share/applications/appium-inspector.desktop
 fi
 mkdir appium-inspector
 
