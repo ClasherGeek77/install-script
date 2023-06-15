@@ -15,7 +15,7 @@ sudo apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
 cd ~
 if [ -f ~/android-sdk.zip ]; then
     sudo rm -rf ~/android-sdk.zip
-    echo "File exists."
+    echo "File exists. redownloading..."
     wget -q --show-progress --output-document=android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
 else 
     echo "File does not exist."
