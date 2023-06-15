@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=2023.6.1
+Type=Application
+Name=Appium Inspector
+Comment=Appium Inspector to locate App element
+TryExec=~/.appium-inspector/Appium-Inspector-linux.AppImage
+Exec=~/.appium-inspector/Appium-Inspector-linux.AppImage
+Icon=~/.appium-inspector/appiuminspector.png
+Actions=Editor
