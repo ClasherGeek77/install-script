@@ -17,7 +17,7 @@ fi
 
 cd ~/.pyenv && src/configure && make -C src
 
-if grep -wq "export PYENV_ROOT" ~/.bashrc; then 
+if grep -wq "command -v pyenv" ~/.bashrc; then 
     echo "Export Exists" 
 else 
     echo "Export Does not exist"
