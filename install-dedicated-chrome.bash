@@ -24,5 +24,7 @@ else
     echo "File does not exist."
     sudo wget -q --show-progress --output-document=$HOME/Downloads/chromedriver_linux64.zip https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_linux64.zip
 fi
+mkdir ~/julo
+mkdir ~/julo/github
 mkdir ~/julo/github/env-setup
 unzip -d ~/julo/github/env-setup ~/Downloads/chromedriver_linux64.zip
