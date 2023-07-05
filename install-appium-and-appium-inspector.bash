@@ -10,7 +10,7 @@ sudo adduser $USER fuse
 
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
-
+sudo npm install -g npm@latest
 sudo npm install -g appium
 exec "$SHELL"
 
