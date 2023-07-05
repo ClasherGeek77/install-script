@@ -18,7 +18,7 @@ sudo n latest
 exec "$SHELL"
 sudo npm install -g npm@latest
 exec "$SHELL"
-sudo npm install -g appium
+sudo npm install -g appium@1.22.3
 exec "$SHELL"
 
 cd ~
