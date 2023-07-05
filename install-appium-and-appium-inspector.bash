@@ -10,6 +10,7 @@ sudo adduser $USER fuse
 
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
+sudo chown -R $USER /usr/local/lib
 sudo chown -R $USER /usr/local/lib/node_modules
 sudo npm install -g npm@latest
 sudo npm install -g appium
