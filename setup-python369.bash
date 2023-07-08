@@ -10,11 +10,11 @@ sudo apt install clang -y
 exec bash
 source ~/.bashrc
 
-if pyenv install 3.6.9 ; then
+if CC=clang pyenv install 3.6.9; then
     echo "Install succeeded"
     pyenv global 3.6.9
     pyenv virtualenv 3.6.9 julo_pytest_3.6.9
-elif CC=clang pyenv install 3.6.9; then
+elif pyenv install 3.6.9 ; then
     echo "Install succeeded"
     pyenv global 3.6.9
     pyenv virtualenv 3.6.9 julo_pytest_3.6.9
