@@ -29,5 +29,3 @@ elif env CC=gcc-11 pyenv install 3.6.9; then
 fi
 exec bash
 source ~/.bashrc
-
-bash -c -i "pyenv activate julo_pytest_3.6.9; pip install --requirement ~/julo/github/regressions/requirements.pip"
