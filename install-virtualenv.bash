@@ -11,8 +11,8 @@ fi
 sudo apt-get --quiet update --yes
 sudo apt-get -y install git
 
-exec "$SHELL"
+exec bash
 
 git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
 
-exec "$SHELL"
+exec bash
