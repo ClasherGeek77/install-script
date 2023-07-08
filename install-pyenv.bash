@@ -4,7 +4,8 @@ sudo apt-get --quiet update --yes
 
 sudo apt-get -y install git
 
-exec "$SHELL"
+exec bash
+source ~/.bashrc
 
 if [[ -d $HOME/.pyenv ]]; then
     echo "pyenv exists. redownloading..."
@@ -40,4 +41,5 @@ then
     echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
 fi
 
-exec "$SHELL"
+exec bash
+source ~/.bashrc
