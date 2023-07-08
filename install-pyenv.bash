@@ -10,10 +10,10 @@ source ~/.bashrc
 if [[ -d $HOME/.pyenv ]]; then
     echo "pyenv exists. redownloading..."
     sudo rm -rf ~/.pyenv
-    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+    curl https://pyenv.run | bash
 else 
     echo "pyenv does not exist."
-    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+    curl https://pyenv.run | bash
 fi
 
 cd ~/.pyenv && src/configure && make -C src
