@@ -8,7 +8,8 @@ else
     echo 'export PATH="$PATH:$ANDROID_HOME/tools/bin"' >> ~/.bashrc
     echo 'export PATH="$PATH:$ANDROID_HOME/platform-tools"' >> ~/.bashrc
 fi
-
+exec bash
+source ~/.bashrc
 sudo apt-get --quiet update --yes
 sudo apt-get --quiet install openjdk-8-jdk --yes
 sudo apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
