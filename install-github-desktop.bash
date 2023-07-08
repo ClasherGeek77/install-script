@@ -11,6 +11,3 @@ else
 fi
 sudo apt-get -y install gdebi-core 
 yes | sudo gdebi GitHubDesktop-linux1.deb
-
-exec bash
-source ~/.bashrc
