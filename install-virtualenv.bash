@@ -1,5 +1,6 @@
 #!/bin/bash
 
+exec bash
 if grep -wq "pyenv virtualenv-init" ~/.bashrc; then 
     echo "Export Exists" 
 else 
