@@ -14,6 +14,8 @@ echo \
 
 exec bash
 
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
+
 sudo apt-get --quiet update --yes
 exec bash
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
