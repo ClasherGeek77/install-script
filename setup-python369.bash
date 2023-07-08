@@ -30,5 +30,4 @@ fi
 exec bash
 source ~/.bashrc
 
-pyenv activate julo_pytest_3.6.9
-pip install --requirement ~/julo/github/regressions/requirements.pip
+bash -c -i "pyenv activate julo_pytest_3.6.9; pip install --requirement ~/julo/github/regressions/requirements.pip"
