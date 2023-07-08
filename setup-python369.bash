@@ -7,7 +7,8 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 
 sudo apt install clang -y
 
-exec "$SHELL"
+exec bash
+source ~/.bashrc
 
 if pyenv install 3.6.9 ; then
     echo "Install succeeded"
@@ -26,4 +27,5 @@ elif env CC=gcc-11 pyenv install 3.6.9; then
     pyenv global 3.6.9
     pyenv virtualenv 3.6.9 julo_pytest_3.6.9
 fi
-exec "$SHELL"
+exec bash
+source ~/.bashrc
