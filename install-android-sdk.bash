@@ -8,7 +8,7 @@ else
     echo 'export PATH="$PATH:$ANDROID_HOME/tools/bin"' >> ~/.bashrc
     echo 'export PATH="$PATH:$ANDROID_HOME/platform-tools"' >> ~/.bashrc
 fi
-exec bash
+exec "$SHELL"
 source ~/.bashrc
 sudo apt-get --quiet update --yes
 sudo apt-get --quiet install openjdk-8-jdk --yes
@@ -24,9 +24,9 @@ else
 fi
 
 sudo unzip -d -f $HOME/android-sdk-29 android-sdk.zip
-exec bash
+exec "$SHELL"
 sudo chmod 777 $HOME/android-sdk-29
-exec bash
+exec "$SHELL"
 yes | sdkmanager --sdk_root=${ANDROID_HOME} --licenses
 yes | sdkmanager --sdk_root=${ANDROID_HOME} --install "platform-tools" "platforms;android-29" "build-tools;29.0.2"
-exec bash
+exec "$SHELL"
