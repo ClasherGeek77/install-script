@@ -1,4 +1,4 @@
-#!/bin/bash
+
 sudo apt-get update
 
 sudo apt-get install -y make build-essential gcc libssl-dev zlib1g-dev \
