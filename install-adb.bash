@@ -1,4 +1,3 @@
-#!/bin/bash
 
 if [ -f /usr/bin/adb ]; then
     echo "File exists. redownloading..."
