@@ -21,8 +21,8 @@ else
     echo "File does not exist."
     wget -q --show-progress --output-document=android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
 fi
-
-sudo unzip -f $HOME/android-sdk-29 -d android-sdk.zip
+rm -rf $HOME/android-sdk-29
+unzip android-sdk.zip -d $HOME/android-sdk-29
 exec "$SHELL"
 sudo chmod 777 $HOME/android-sdk-29
 exec "$SHELL"
