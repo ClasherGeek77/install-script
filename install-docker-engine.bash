@@ -1,4 +1,4 @@
-#!/bin/bash
+
 sudo -s
 sudo apt-get --quiet update --yes
 exec "$SHELL"
