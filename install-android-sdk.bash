@@ -23,7 +23,7 @@ else
     wget -q --show-progress --output-document=android-sdk.zip https://dl.google.com/android/repository/commandlinetools-linux-6200805_latest.zip
 fi
 
-sudo unzip -d $HOME/android-sdk-29 -f android-sdk.zip
+sudo unzip -d $HOME/android-sdk-29 android-sdk.zip
 exec "$SHELL"
 sudo chmod 777 $HOME/android-sdk-29
 exec "$SHELL"
