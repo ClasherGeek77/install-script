@@ -1,4 +1,3 @@
-#!/bin/bash
 
 exec "$SHELL"
 source ~/.bashrc
