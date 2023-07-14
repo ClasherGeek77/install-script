@@ -1,4 +1,3 @@
-#!/bin/bash
 
 sudo apt-get --quiet update --yes
 
