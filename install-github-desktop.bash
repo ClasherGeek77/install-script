@@ -1,4 +1,3 @@
-#!/bin/bash
 
 cd ~
 if [ -f ~/GitHubDesktop-linux1.deb ]; then
