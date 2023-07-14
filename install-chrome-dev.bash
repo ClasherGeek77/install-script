@@ -1,4 +1,3 @@
-#!/bin/bash
 
 sudo add-apt-repository -y ppa:flatpak/stable
 sudo apt-get --quiet update --yes
