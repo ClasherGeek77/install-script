@@ -1,4 +1,3 @@
-#!/bin/bash
 
 if grep -wq "export ANDROID_HOME=" ~/.bashrc; then 
     echo "Export Exists" 
