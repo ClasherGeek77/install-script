@@ -27,6 +27,6 @@ sudo unzip -d $HOME/android-sdk-29 android-sdk.zip
 exec "$SHELL"
 sudo chmod 777 $HOME/android-sdk-29
 exec "$SHELL"
-yes | sdkmanager --sdk_root=${ANDROID_HOME} --licenses
-yes | sdkmanager --sdk_root=${ANDROID_HOME} --install "platform-tools" "platforms;android-29" "build-tools;29.0.2"
+yes | $HOME/android-sdk-29/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
+yes | $HOME/android-sdk-29/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --install "platform-tools" "platforms;android-29" "build-tools;29.0.2"
 exec "$SHELL"
