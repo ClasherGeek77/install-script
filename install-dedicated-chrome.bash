@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 sudo apt -y --purge remove google-chrome-stable
 
