@@ -16,6 +16,7 @@ echo \
 exec "$SHELL"
 
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
+exec "$SHELL"
 
 sudo apt-get --quiet update --yes
 exec "$SHELL"
