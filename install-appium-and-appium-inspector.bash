@@ -17,6 +17,7 @@ sudo chown -R $USER /usr/local
 exec "$SHELL"
 source ~/.bashrc
 sudo npm install -g appium@1.22.3
+sudo npm install -g appium-chromedriver@4.27.3
 exec "$SHELL"
 source ~/.bashrc
 
