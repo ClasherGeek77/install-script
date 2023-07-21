@@ -9,7 +9,7 @@ sudo addgroup fuse
 sudo adduser $USER fuse
 
 sudo apt remove nodejs npm -y
-curl -s https://deb.nodesource.com/setup_14.x | sudo bash
+curl -s https://deb.nodesource.com/setup_18.x | sudo bash
 sudo apt-get update --yes
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
