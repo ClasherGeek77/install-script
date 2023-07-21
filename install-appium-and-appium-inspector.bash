@@ -7,6 +7,7 @@ sudo modprobe -v fuse
 sudo addgroup fuse
 sudo adduser $USER fuse
 
+sudo apt remove nodejs npm -y
 curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 sudo apt-get --quiet update --yes
 sudo apt-get -y install nodejs
@@ -23,7 +24,7 @@ then
     sudo rm -rf /opt/appium-inspector
     sudo rm -rf ~/.local/share/applications/appium-inspector.desktop
 fi
-mkdir ~/appium-inspector
+mkdir appium-inspector
 
 cd ~/appium-inspector/
 
