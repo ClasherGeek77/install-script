@@ -27,7 +27,7 @@ then
 fi
 mkdir ~/appium-inspector
 
-cd ~/appium-inspector/
+cd ~/appium-inspector
 
 sudo wget -q --show-progress --output-document=Appium-Inspector-linux.AppImage https://github.com/appium/appium-inspector/releases/download/v2023.6.1/Appium-Inspector-linux-2023.6.1.AppImage
 sudo wget -q --show-progress --output-document=appiuminspector.png https://github.com/ClasherGeek77/install-script/blob/main/appiuminspector.png?raw=true
