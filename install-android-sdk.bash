@@ -24,9 +24,12 @@ fi
 rm -rf $HOME/android-sdk-29
 unzip android-sdk.zip -d $HOME/android-sdk-29
 exec "$SHELL"
+source ~/.bashrc
 sudo chmod 777 $HOME/android-sdk-29
 sudo chown $USER:$USER $ANDROID_HOME -R
 exec "$SHELL"
+source ~/.bashrc
 yes | $HOME/android-sdk-29/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
 yes | $HOME/android-sdk-29/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --install "platform-tools" "platforms;android-29" "build-tools;29.0.2"
 exec "$SHELL"
+source ~/.bashrc

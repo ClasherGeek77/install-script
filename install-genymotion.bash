@@ -15,3 +15,4 @@ fi
 sudo chmod +x ~/genymotion.bin
 yes | sudo ~/genymotion.bin
 exec "$SHELL"
+source ~/.bashrc

@@ -9,3 +9,4 @@ else
 fi
 sudo chmod +x /usr/bin/adb
 exec "$SHELL"
+source ~/.bashrc

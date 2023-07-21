@@ -15,8 +15,10 @@ sudo apt-get -y install nodejs
 sudo apt-get -y install npm
 sudo chown -R $USER /usr/local
 exec "$SHELL"
+source ~/.bashrc
 sudo npm install -g appium@1.22.3
 exec "$SHELL"
+source ~/.bashrc
 
 cd ~
 if [[ -d /opt/appium-inspector ]]
@@ -39,3 +41,4 @@ sudo mv ~/appium-inspector /opt/
 sudo chmod a+x /opt/appium-inspector/Appium-Inspector-linux.AppImage
 
 exec "$SHELL"
+source ~/.bashrc

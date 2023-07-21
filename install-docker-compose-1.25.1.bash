@@ -2,3 +2,4 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.1/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 exec "$SHELL"
+source ~/.bashrc
