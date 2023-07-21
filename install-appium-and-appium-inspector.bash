@@ -32,8 +32,6 @@ sudo wget -q --show-progress --output-document=Appium-Inspector-linux.AppImage h
 sudo wget -q --show-progress --output-document=appiuminspector.png https://github.com/ClasherGeek77/install-script/blob/main/appiuminspector.png?raw=true
 sudo wget -q --show-progress --output-document=appium-inspector.desktop https://raw.githubusercontent.com/ClasherGeek77/install-script/main/appium-inspector.desktop
 
-sudo chmod a+x ~/appium-inspector/Appium-Inspector-linux.AppImage
-
 sudo mv ~/appium-inspector/appium-inspector.desktop ~/.local/share/applications
 sudo mv ~/appium-inspector /opt/
 
