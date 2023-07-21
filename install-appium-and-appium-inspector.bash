@@ -25,7 +25,7 @@ then
     sudo rm -rf /opt/appium-inspector
     sudo rm -rf ~/.local/share/applications/appium-inspector.desktop
 fi
-mkdir appium-inspector
+mkdir ~/appium-inspector
 
 cd ~/appium-inspector/
 
