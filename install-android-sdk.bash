@@ -4,6 +4,7 @@ if grep -wq "export ANDROID_HOME=" ~/.bashrc; then
 else 
     echo "Does not exist"
     echo 'export ANDROID_HOME="$HOME/android-sdk-29"' >> ~/.bashrc
+    echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk-29"' >> ~/.bashrc
     echo 'export PATH="$PATH:$ANDROID_HOME/tools/bin"' >> ~/.bashrc
     echo 'export PATH="$PATH:$ANDROID_HOME/platform-tools"' >> ~/.bashrc
 fi
