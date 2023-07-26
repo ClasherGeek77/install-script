@@ -22,7 +22,7 @@ else
     echo "File does not exist."
     wget -q --show-progress --output-document=https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 fi
-rm -rf $HOME/android-sdk-29
+sudo rm -rf $HOME/android-sdk-29
 unzip android-sdk.zip -d $HOME/android-sdk-29
 exec "$SHELL"
 source ~/.bashrc
