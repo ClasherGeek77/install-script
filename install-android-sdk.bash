@@ -17,10 +17,10 @@ cd ~
 if [ -f ~/android-sdk.zip ]; then
     sudo rm -rf ~/android-sdk.zip
     echo "File exists. redownloading..."
-    wget -q --show-progress --output-document=https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+    wget -q --show-progress --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 else 
     echo "File does not exist."
-    wget -q --show-progress --output-document=https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+    wget -q --show-progress --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 fi
 sudo rm -rf $HOME/android-sdk-29
 unzip android-sdk.zip -d $HOME/android-sdk-29
