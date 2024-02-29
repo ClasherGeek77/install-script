@@ -16,8 +16,8 @@ sudo apt-get -y install npm
 sudo chown -R $USER /usr/local
 exec "$SHELL"
 source ~/.bashrc
-sudo npm install -g appium@1.22.3
-sudo npm install -g appium-chromedriver@4.27.3
+sudo npm install --location=global appium
+sudo appium driver install --source=npm appium-uiautomator2-driver
 exec "$SHELL"
 source ~/.bashrc
 
