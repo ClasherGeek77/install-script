@@ -30,7 +30,7 @@ sudo chmod 777 $HOME/android-sdk
 sudo chown $USER:$USER $ANDROID_HOME -R
 exec "$SHELL"
 source ~/.bashrc
-yes | sudo $HOME/android-sdk/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
-yes | sudo $HOME/android-sdk/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --install "platform-tools" "platforms;android-34" "build-tools;34"
+yes | sudo $HOME/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
+yes | sudo $HOME/android-sdk/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --install "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 exec "$SHELL"
 source ~/.bashrc
