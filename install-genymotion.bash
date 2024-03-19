@@ -1,6 +1,16 @@
 
-sudo apt-get --quiet update --yes
-sudo apt-get -y install virtualbox
+cd ~
+if [ -f ~/vbox6-linux1.deb ]; then
+    echo "File exists.redownloading..."
+    sudo rm -rf ~/vbox6-linux1.deb
+    sudo wget -q --show-progress --output-document=$HOME/vbox6-linux1.deb https://download.virtualbox.org/virtualbox/6.1.50/virtualbox-6.1_6.1.50-161033~Ubuntu~jammy_amd64.deb
+else 
+    echo "File does not exist."
+    sudo wget -q --show-progress --output-document=$HOME/vbox6-linux1.deb https://download.virtualbox.org/virtualbox/6.1.50/virtualbox-6.1_6.1.50-161033~Ubuntu~jammy_amd64.deb
+fi
+
+sudo apt-get -y install gdebi-core 
+yes | sudo gdebi vbox6-linux1.deb
 
 cd ~
 
