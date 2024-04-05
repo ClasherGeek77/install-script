@@ -8,16 +8,7 @@ sudo modprobe -v fuse
 sudo addgroup fuse
 sudo adduser $USER fuse
 
-sudo apt remove nodejs npm -y
-curl -s https://deb.nodesource.com/setup_18.x | sudo bash
-sudo apt-get update --yes
-sudo apt-get -y install nodejs
-sudo apt-get -y install npm
-sudo chown -R $USER /usr/local
-exec "$SHELL"
-source ~/.bashrc
-sudo npm install --location=global appium
-sudo appium driver install --source=npm appium-uiautomator2-driver
+curl https://raw.githubusercontent.com/ClasherGeek77/install-script/main/install-appium-only.bash | bash
 exec "$SHELL"
 source ~/.bashrc
 
