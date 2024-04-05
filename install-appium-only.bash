@@ -10,6 +10,7 @@ sudo chown -R $USER /usr/local
 exec "$SHELL"
 source ~/.bashrc
 sudo npm install --location=global appium
+npm install --location=global appium
 sudo appium driver install --source=npm appium-uiautomator2-driver
 appium driver install --source=npm appium-uiautomator2-driver
 exec "$SHELL"
