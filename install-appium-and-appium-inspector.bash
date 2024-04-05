@@ -32,5 +32,7 @@ sudo mv ~/appium-inspector /opt/
 
 sudo chmod a+x /opt/appium-inspector/Appium-Inspector-linux.AppImage
 
+sudo apt-get install --reinstall gnome-control-center -y
+
 exec "$SHELL"
 source ~/.bashrc
