@@ -1,5 +1,3 @@
-
-
 sudo apt -y --purge remove google-chrome-stable
 
 sudo apt-get -y install gdebi-core 
