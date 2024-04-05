@@ -1,5 +1,5 @@
 
-if grep -wq "export ANDROID_HOME=" ~/.bashrc; then 
+if grep -wq android-sdk-29 ~/.bashrc; then 
     echo "Export Exists" 
 else 
     echo "Does not exist"
@@ -7,9 +7,11 @@ else
     echo 'export ANDROID_SDK_ROOT="$HOME/android-sdk-29"' >> ~/.bashrc
     echo 'export PATH="$PATH:$ANDROID_HOME/tools/bin"' >> ~/.bashrc
     echo 'export PATH="$PATH:$ANDROID_HOME/platform-tools"' >> ~/.bashrc
+    echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.bashrc
+    echo 'export PATH=$PATH:$JAVA_HOME/bin' >> ~/.bashrc
 fi
-exec "$SHELL"
 source ~/.bashrc
+
 sudo apt-get --quiet update --yes
 sudo apt-get --quiet install openjdk-8-jdk --yes
 sudo apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
@@ -24,13 +26,13 @@ else
 fi
 sudo rm -rf $HOME/android-sdk-29
 unzip android-sdk.zip -d $HOME/android-sdk-29
-exec "$SHELL"
+
 source ~/.bashrc
 sudo chmod 777 $HOME/android-sdk-29
 sudo chown $USER:$USER $ANDROID_HOME -R
-exec "$SHELL"
+
 source ~/.bashrc
 yes | sudo $HOME/android-sdk-29/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
 yes | sudo $HOME/android-sdk-29/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --install "platform-tools" "platforms;android-29" "build-tools;29.0.2"
-exec "$SHELL"
 source ~/.bashrc
+exec "$SHELL"
