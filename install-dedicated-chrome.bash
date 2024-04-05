@@ -9,6 +9,7 @@ if [ -f ~/Downloads/google-chrome-stable_109.0.5414.74-1_amd64.deb ]; then
 else 
     echo "File does not exist."
     sudo wget -q --show-progress --output-document=$HOME/Downloads/google-chrome-stable_amd64.deb https://mirror.cs.uchicago.edu/google-chrome/pool/main/g/google-chrome-stable/google-chrome-stable_109.0.5414.74-1_amd64.deb
+fi
 yes | sudo gdebi ~/Downloads/google-chrome-stable_amd64.deb
 
 
@@ -20,7 +21,8 @@ else
     echo "File does not exist."
     sudo wget -q --show-progress --output-document=$HOME/Downloads/chromedriver_linux64.zip https://chromedriver.storage.googleapis.com/109.0.5414.74/chromedriver_linux64.zip
 fi
+
 mkdir ~/julo
 mkdir ~/julo/github
 mkdir ~/julo/github/env-setup
-unzip -d ~/julo/github/env-setup ~/Downloads/chromedriver_linux64.zip
+unzip -d ~/julo/github/env-setup ~/Downloads/chromedriver_linux64.zip;
