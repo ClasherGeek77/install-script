@@ -1,11 +1,4 @@
-
-sudo add-apt-repository -y ppa:flatpak/stable
-sudo apt-get --quiet update --yes
-sudo apt -y install flatpak
-sudo apt -y install gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-exec "$SHELL"
-source ~/.bashrc
-flatpak install -y flathub com.google.ChromeDev
-flatpak run com.google.ChromeDev
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+sudo apt update -y
+sudo apt-get install google-chrome-unstable -y
